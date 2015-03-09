@@ -1,0 +1,9 @@
+Optimized:
+    1. Again, write 2 cpp programs, producer and consumer
+        a. again, producer opens up a file and periodically writes to it.
+        b. again, consumer opens up all files in a directory and reads their output
+    2. Again, write the bash script to launch several producer programs, sleep, then launch several more.
+
+    In the optimized version, you need to use inotify and/or epoll. First and foremost, the optimized version should be correct. If you want to verify that it's also faster, you can look into gettimeofday() (another unix function), and you can try to time the two versions to show the speedup.
+
+

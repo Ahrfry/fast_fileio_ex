@@ -1,0 +1,7 @@
+Baseline:
+    1. Write 2 cpp programs, "producer" and "consumer"
+        a. producer opens up a file and periodically writes to it
+        b. consumer opens up all files in a directory and reads their output
+    2. Write a bash script that launches several producer programs, goes to sleep, and then launches several more producer programs.
+
+    In this baseline version, the consumer can loop over the directory, and it can loop over the lines of output in the files. This would be akin to the way the scheduler is working today. In fact, you can refer to the bitbucket repo and file_controller.cpp for some hints on how it does it. The consumer needs to capture all output of all files -- including files that are created after t = 0. You can dump information that the consumer reads to stdout or some separate file.
